@@ -11,7 +11,6 @@ html {
   padding: 0;
   border: 50px solid green;
   display: flex;
-  justify-content: flex-end;
 }
 .pizza-price {
   flex: 1 1 30%;
