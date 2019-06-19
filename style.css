@@ -64,7 +64,6 @@ html {
 .special h1 {
   writing-mode: vertical-rl;
   text-align: center;
-  /* padding-top: 110px; */
   color: white;
   text-transform: uppercase;
   position: absolute;
