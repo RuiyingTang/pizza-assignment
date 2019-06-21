@@ -33,24 +33,25 @@ html {
   bottom: 20px;
   right: 20px;
 }
+
 .pizza-vegetale {
   flex: 1 1 60%;
   padding-left: 30px;
   display: flex;
   flex-direction: column;
 }
-.vegeterian {
+.pizza-delicious {
   padding: 0 10px;
-  background-color: lightgreen;
   border-radius: 20px;
-  margin-right: 20px;
+
   text-transform: uppercase;
 }
+.vegeterian {
+  margin-right: 20px;
+  background-color: lightgreen;
+}
 .italian {
-  padding: 0 10px;
   background-color: cadetblue;
-  border-radius: 20px;
-  text-transform: uppercase;
 }
 .info span {
   display: inline-block;
