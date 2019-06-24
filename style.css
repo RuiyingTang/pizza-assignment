@@ -3,11 +3,16 @@ html {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 .container {
   max-width: 964px;
-  height: 334px;
-  margin: 100px auto;
+  /* height: auto; */
+  margin: 0 auto;
   padding: 0;
   border: 50px solid green;
   display: flex;
@@ -58,17 +63,25 @@ html {
   padding: 0 10px;
 }
 .special {
-  flex: 1 1 10%;
+  /* flex: 1 1 10%; */
   background-color: cadetblue;
-  position: relative;
-}
-.special h1 {
   writing-mode: vertical-rl;
   text-align: center;
   color: white;
+  font-size: 2rem;
   text-transform: uppercase;
-  position: absolute;
-  top: 30%;
-  left: 0;
-  right: 0;
+}
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .pizza-price p {
+    height: 150px;
+    overflow: hidden;
+  }
+  .special {
+    writing-mode: horizontal-tb;
+  }
 }
